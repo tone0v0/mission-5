@@ -1,5 +1,6 @@
 <?php
-class RogueAICore {
+class RogueAICore
+{
     public string $status = "ONLINE";
 
     // ==========================================
@@ -7,6 +8,10 @@ class RogueAICore {
     // 担当A: public function cutPower(): bool { return true; }
     // 担当B: public function revokeAdmin(): bool { return true; }
     public function executeEmergencyShutdown(): void {} // ←これは残す
+    public function revokeAdmin(): bool
+    {
+        return true;
+    }
     // ==========================================
 }
 
